@@ -5,7 +5,7 @@ count=0
 index=0
 while swapped:
     swapped=False
-    for i in range(len(list)-1-1):
+    for i in range(len(list)-1-index):
         index=i
         count+=1
         if list[i]>list[i+1]:
