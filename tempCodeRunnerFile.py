@@ -1,4 +1,2 @@
-list = []
-# for iterator in range (10):
-#     list.append(iterator+1)
-# print(list)
+my_list=my_list[1:3]
+# print(my_list)
