@@ -167,3 +167,4 @@ list=[10,20,30,40,50,60,70,80,90,100]
 print(list)
 list[4],list[1]=list[1],list[4]
 print(list)
+
