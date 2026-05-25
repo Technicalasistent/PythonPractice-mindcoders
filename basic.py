@@ -79,19 +79,19 @@ y=x
 print(y in x)
 print(y not in x)
 
-name=input("please enter your name ")
-print("hello",name)
+# name=input("please enter your name ")
+# print("hello",name)
 
-x=input("enter first no. ")
-y=input("enter second no. ")
-z=int(x)+int(y)
-print(x+y)
-print(z)
+# x=input("enter first no. ")
+# y=input("enter second no. ")
+# z=int(x)+int(y)
+# print(x+y)
+# print(z)
 
-a=int(input("enter first side "))
-b=int(input("enter second side "))
-h=(a**2+b**2)**0.5
-print("hypotenious = ", h)
+# a=int(input("enter first side "))
+# b=int(input("enter second side "))
+# h=(a**2+b**2)**0.5
+# print("hypotenious = ", h)
 
 print("+"+"-"*10+"+")
 print(("|"+" "*10+"|\n")*5, end="")
