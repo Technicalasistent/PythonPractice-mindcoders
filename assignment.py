@@ -105,19 +105,38 @@ for i in range(1,6):
     print(i,"mississippily")
 print("Ready or not, here I come!")
     
-user_word=input("enter word ")
-user_word = user_word.upper()
-word_without_vowels=""
-for letter in user_word:
-    if letter=='A':
-        continue
-    elif letter=='E':
-        continue
-    elif letter=='I':
-        continue
-    elif letter=='O':
-        continue
-    elif letter=='U':
-        continue
-    word_without_vowels+=letter
-print(word_without_vowels)
+# user_word=input("enter word ")
+# user_word = user_word.upper()
+# word_without_vowels=""
+# for letter in user_word:
+#     if letter=='A':
+#         continue
+#     elif letter=='E':
+#         continue
+#     elif letter=='I':
+#         continue
+#     elif letter=='O':
+#         continue
+#     elif letter=='U':
+#         continue
+#     word_without_vowels+=letter
+# print(word_without_vowels)
+
+# list=[1,2,3,4,5]
+# print(len(list))
+# del list[-1]
+# print(list)
+
+# str1=input("enter string ")
+# count=0
+# for i in str1:
+#     if i.isdigit():
+#         count+=1
+# print("total no. of string ",count)
+
+str1=input("enter string ")
+count=0
+for i in str1:
+    if i=='s'or i=='S':
+        count+=1
+print(count)
