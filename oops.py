@@ -229,21 +229,130 @@
 #         print(isinstance(obj,cls),end="\t")
 #     print()
 
-class sampleclass:
-    def __init__(self,val=1):
-        self.val=val
-object_1=sampleclass(0)
-object_2=sampleclass(2)
-object_3=object_1
-object_3.val+=1
+# class sampleclass:
+#     def __init__(self,val=1):
+#         self.val=val
+# object_1=sampleclass(0)
+# object_2=sampleclass(2)
+# object_3=object_1
+# object_3.val+=1
 
-print(object_1 is object_2)
-print(object_2 is object_3)
-print(object_3 is object_1)
-print(object_1.val ,object_2.val , object_3.val)
+# print(object_1 is object_2)
+# print(object_2 is object_3)
+# print(object_3 is object_1)
+# print(object_1.val ,object_2.val , object_3.val)
 
-string_1="mary had a little "
-string_2="mary had a little lamp"
-string_1+="lamp"
+# string_1="mary had a little "
+# string_2="mary had a little lamp"
+# string_1+="lamp"
 
-print(string_1==string_2,string_1 is string_2)
+# print(string_1==string_2,string_1 is string_2)
+
+# class Super:
+#     def __init__(self,name):
+#         self.name=name
+#     def __str__(self):
+#         return "my name is "+self.name+"."
+    
+# class Sub(Super):
+#     def __init__(self, name):
+#         super().__init__(name)
+# obj=Sub("andy")
+# print(obj)
+
+# class SuperA:
+#     var_a=10
+#     def fun_a(self):
+#         return 11
+# class SuperB:
+#     var_b=20
+#     def fun_b(self):
+#         return 21
+    
+# class Sub(SuperA,SuperB):
+#     pass
+# obj=Sub()
+# print(obj.var_a,obj.fun_a())
+# print(obj.var_b,obj.fun_b())
+
+# class Level1:
+#     var=100
+#     def fun(self):
+#         return 101
+    
+# class Level2(Level1):
+#     var=200
+#     def fun(self):
+#         return 201
+    
+# class Level3(Level2):
+#     pass
+
+# obj=Level3()
+# print(obj.var,obj.fun())
+
+# class Left:
+#     var="L"
+#     var_left="LL"
+#     def fun(self):
+#         return "Left"
+# class Right:
+#     var="R"
+#     var_right="RR"
+#     def fun(self):
+#         return "right"
+    
+# class Sub(Left,Right):
+#     pass
+# obj=Sub()
+# print(obj.var,obj.var_left,obj.var_right,obj.fun())
+
+# class One:
+#     def do_it(self):
+#         print("do it from one")
+#     def doanything(self):
+#         self.do_it()
+
+# class Two(One):
+#     def do_it(self):
+#         print("do it from two")
+# one=One()
+# two=Two()
+# one.doanything()
+# two.doanything()
+
+# def reciprocal(n):
+#     try:
+#         n=1/n
+#     except ZeroDivisionError:
+#         print("division failed")
+#         return None
+#     else:
+#         print("everything went fine") 
+#     finally:
+#         print("its time to say good bye")
+#         return n
+    
+# print("-----------")
+# print("reciprocal(2) ",reciprocal(2))
+# print("-----------")
+# print("reciprocal(0) ",reciprocal(0))  
+
+# try:
+#     i=int("hello")
+# except Exception as e:
+#     print(e)
+#     print(e.__str__())
+
+class MyZeroDivision(ZeroDivisionError):
+    pass
+
+def do_the_division(mine):
+    if mine:
+        raise MyZeroDivision("some worse news")
+    else:
+        raise ZeroDivisionError("some bad news")
+
+do_the_division(False)
+do_the_division(True)
+
