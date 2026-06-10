@@ -76,7 +76,3 @@ print(f'price:Rs.{price}|gst:Rs.{price*gst:.2f}|total:Rs.{price*(1+gst):.2f}')
 # print(count)
 # print(string[14:17])
 # print(string[::-1])
-
-# with open("data.txt","r") as file:
-#     data=file.read()
-# print(data)
