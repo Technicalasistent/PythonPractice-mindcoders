@@ -1,4 +1,4 @@
-city='Bhopal'
+'''city='Bhopal'
 print(city[0])
 print(city[2])
 
@@ -60,19 +60,13 @@ print(f'hello {name:<10}')
 # print(f'hello {name:*10}')
 price,gst=500,0.18
 print(f'price:Rs.{price}|gst:Rs.{price*gst:.2f}|total:Rs.{price*(1+gst):.2f}')
-
-# string="Hello,How are you doing today"
-# for i in string:
-#     if i=='A':
-#         count+=1
-#     if i=='E':
-#         count+=1
-#     if i=='I':
-#         count+=1
-#     if i=='O':
-#         count+=1
-#     if i=='U':
-#         count+=1
-# print(count)
-# print(string[14:17])
-# print(string[::-1])
+'''
+string="Hello,How are you doing today"
+vovels='a','e','i','o','u'
+count=0
+for i in string:
+    if i in vovels:
+        count += 1
+print(count)
+print(string[14:17])
+print(string[::-1])
