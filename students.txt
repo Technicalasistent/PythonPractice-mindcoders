@@ -1,4 +1,4 @@
-Rahul Sharma,85,Bhopal
-Priya Verma,92,indore
-Amit Kumar,90,Jabalpur
-Sneha Joshi,88,Bhopal
+    Rahul Sharma,85,Bhopal dist
+Priya Verma,92marks,indore seher
+Amit Kumar,90marks,Jabalpur
+Sneha Joshi,88marks,Bhopal

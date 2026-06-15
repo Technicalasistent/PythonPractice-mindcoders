@@ -1,18 +1,18 @@
-# with open("data.txt","r") as file:
-#     data=file.read()
-# print(data)
+# # with open("data.txt","r") as file:
+# #     data=file.read()
+# # print(data)
 
-# with open('students.txt','w') as f:
-#     f.write('Rahul Sharma,85,Bhopal\n')
-#     f.write('Priya Verma,92,indore\n')
-#     f.write('Amit Kumar,90,Jabalpur\n')
+# # with open('students.txt','w') as f:
+# #     f.write('Rahul Sharma,85,Bhopal\n')
+# #     f.write('Priya Verma,92,indore\n')
+# #     f.write('Amit Kumar,90,Jabalpur\n')
 
-# with open('students.txt','a') as f:
-#     f.write('Sneha Joshi,88,Bhopal\n')
+# # with open('students.txt','a') as f:
+# #     f.write('Sneha Joshi,88,Bhopal\n')
 
-# with open('students.txt','r') as f:
-#     content = f.read()
-# print(content)
+# # with open('students.txt','r') as f:
+# #     content = f.read()
+# # print(content)
 
 # with open('students.txt','r') as f:
 #     for line in f:
@@ -46,9 +46,9 @@ student_records=[
 with open('sd.csv','w',newline='') as f:
     csv.writer(f).writerows(student_records)
 
-# with open('sd.csv','r') as f:
-#     for row in csv.DictReader(f):
-#         print(f'{row["Name"]}:{row["Age"]}:({row["Marks-1"]} marks):({row["Marks-2"]} marks):({row["Marks-3"]} marks)')
+with open('sd.csv','r') as f:
+    for row in csv.DictReader(f):
+        print(f'{row["Name"]}:{row["Age"]}:({row["Marks-1"]} marks):({row["Marks-2"]} marks):({row["Marks-3"]} marks)')
 name=input("enter name ")
 found=False
 with open('sd.csv','r') as f:
