@@ -11,8 +11,23 @@ df=pd.DataFrame({
     'city'        : np.random.choice(['Bhopal','Indore','Jabalpur'],100),
     'gender' : np.random.choice(['Male','Female'],100)
     })
+# histogram
+# plt.figure(figsize=(10,4))
+# sns.histplot(df['marks'],bins=20,kde=True,color='steelblue')
+# plt.title('Distribution of student marks')
+# plt.show()
 
-plt.figure(figsize=(10,4))
-sns.histplot(df['marks'],bins=20,kde=True,color='steelblue')
-plt.title('Distribution of student marks')
+# Box Plot
+# sns.boxplot(data=df,x='city',y='marks',palette='Set1')#palette is used for color
+# plt.title('marks distribution by city')
+# plt.show()
+
+#corelation heat map
+# plt.figure(figsize=(5,4))
+# sns.heatmap(df[['marks','study_hours']].corr(),annot=True,cmap='prism',vmin=-1,vmax=1)
+# plt.title('correlation matrix')
+# plt.show()
+
+#pair plot
+sns.pairplot(df[['marks','study_hours']],diag_kind='kde')
 plt.show()
