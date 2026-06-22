@@ -9,3 +9,4 @@
 
 # random=np.random.randint(40100,(5,3))
 # print(random)
+import matplotlib.pyplot as plt
