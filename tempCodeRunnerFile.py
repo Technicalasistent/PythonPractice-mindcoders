@@ -1,4 +1,4 @@
-ones=np.ones((2,5))
+
 # print(ones)
 
 # rng=np.arange(0,50,5)
